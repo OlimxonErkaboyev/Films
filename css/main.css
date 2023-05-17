@@ -60,11 +60,16 @@ ul, ol,li {
 
 
 .films-box{
-    height: 600px;
+    height: 650px;
 }
 
 .films-desc{
     padding: 0;
     margin: 0;
     /* height: 10px; */
+}
+
+.sort-select{
+    width: 300px;
+
 }

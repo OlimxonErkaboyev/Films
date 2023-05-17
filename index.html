@@ -21,8 +21,14 @@
                 <input class="js-search-input form-control" type="text" placeholder="Search...">
                 <button class="js-search-btn btn btn-primary">Search</button>
             </div>
-            <select class="js-films-select form-control" name="genres">
+            <select class="js-films-select form-select" name="genres">
                 <option class="js-films-option"  value="Janrni tanlang"selected>Janrni tanlang</option>
+                <option  value="Janrni tanlang">None</option>
+            </select>
+            <select class="js-films-sort-select sort-select ms-3 form-select" name="sort">
+                <option class="js-films-sort-option"  value="Sort-by"selected>Sort by</option>
+                <option class="js-option-a-z"  value="a-z">A-Z</option>
+                <option class="js-option-z-a"  value="z-a">Z-A</option>
             </select>
         </form>
 
@@ -38,11 +44,16 @@
     <!-- Template -->
     <template class="js-films-temp">
         <li class="js-films-item films-item col-12 col-sm-4 col-md-4 col-lg-3 mb-3">
-            <div class="films-box p-3 rounded text-bg-secondary">
-                <img class="js-films-img film-img" src="https://via.placeholder.com/300">
-                <h4 class="js-films-title my-2">Shazam</h4>
-                <p class="js-films-desc films-desc">The story follows Carol Danvers as she becomes one of the universe’s most powerful </p>
-                <p class="js-films-genres films-genres my-3">Action, Comedy, Fantasy</p>
+            <div class="films-box p-3 rounded d-flex flex-column  justify-content-between text-bg-secondary">
+                <div class="">
+                    <img class="js-films-img film-img" src="https://via.placeholder.com/300">
+                    <h4 class="js-films-title my-2">Shazam</h4>
+                    <p class="js-films-desc films-desc">The story follows Carol Danvers as she becomes one of the universe’s most powerful </p>
+                    <p class="js-films-genres films-genres my-3">Action, Comedy, Fantasy</p>
+                </div>
+                <div class="d-grid">
+                    <button class="js-films-btn btn btn-success">More info</button>
+                </div>
             </div>
         </li>
     </template>
